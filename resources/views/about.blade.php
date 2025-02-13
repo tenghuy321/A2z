@@ -62,49 +62,41 @@
     </div>
 
 
-    <div class="w-full max-w-6xl mx-auto relative mt-5 lg:-top-[100px]">
-        {{-- <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
-            <div class="text-[14px] md:text-[16px] flex flex-col space-y-2">
-                <h1 class="text-[20px] font-[700]">Lorem, ipsum dolor.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero eius repellat excepturi, laborum possimus cupiditate voluptas commodi deleniti consequuntur ratione obcaecati corrupti nisi aliquid vel placeat consectetur? Vero, tempore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero eius repellat excepturi, laborum possimus cupiditate voluptas commodi deleniti consequuntur ratione obcaecati corrupti nisi aliquid vel placeat consectetur? Vero, tempore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa libero eius repellat excepturi, laborum possimus cupiditate voluptas commodi deleniti consequuntur ratione obcaecati corrupti nisi aliquid vel placeat consectetur? Vero, tempore.</p>
-            </div>
-            <div>
-                <video class="w-full h-full object-cover" controls autoplay>
-                    <source src="{{ asset('assets/images/video-1.mp4') }}" type="video/mp4">
-                    <source src="{{ asset('assets/images/video-1.ogg') }}" type="video/ogg">
-                </video>
-            </div>
-        </div> --}}
+    <div class="w-full max-w-7xl mx-auto relative mt-5 lg:-top-[100px] px-4">
+        <h1 class="text-start text-[20px] md:text-[30px] text-[#1C4089] font-[700] py-10">About Us</h1>
         <video class="w-full h-full object-cover px-4" controls autoplay>
             <source src="{{ asset('assets/images/video-1.mp4') }}" type="video/mp4">
             <source src="{{ asset('assets/images/video-1.ogg') }}" type="video/ogg">
         </video>
     </div>
 
-    <div class="home_swiper h-full relative">
-        <div class="home_content m-0 p-0">
-            <div class="swiper mySwiper1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex flex-col" id="value">
-                        <img src="{{ asset('assets/images/home/value.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Core Values</p>
-                    </div>
-                    <div class="swiper-slide flex flex-col" id="mission">
-                        <img src="{{ asset('assets/images/home/mission.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Mission</p>
-                    </div>
-                    <div class="swiper-slide flex flex-col" id="vision">
-                        <img src="{{ asset('assets/images/home/vision.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Vision</p>
+
+    <div>
+        <h1 class="text-start text-[20px] md:text-[30px] text-[#1C4089] font-[700] py-10 max-w-7xl mx-auto px-4">Vision, Mission Statement, Core Values</h1>
+
+        <div class="home_swiper h-full relative">
+            <div class="home_content m-0 p-0">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex flex-col" id="value">
+                            <img src="{{ asset('assets/images/home/value.png') }}" alt="">
+                            <p class="text-center uppercase tracking-[1px] mt-2">Core Values</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col" id="mission">
+                            <img src="{{ asset('assets/images/home/mission.png') }}" alt="">
+                            <p class="text-center uppercase tracking-[1px] mt-2">Mission</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col" id="vision">
+                            <img src="{{ asset('assets/images/home/vision.png') }}" alt="">
+                            <p class="text-center uppercase tracking-[1px] mt-2">Vision</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="dynamic-content1" class="p-4 relative mt-4 lg:mt-0">
+        <div id="dynamic-content1" class="p-4 relative mt-4 lg:mt-0">
+        </div>
     </div>
 
 

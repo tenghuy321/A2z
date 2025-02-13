@@ -11,7 +11,7 @@
     @endcomponent
 
 
-    <div class="w-full max-w-6xl mx-auto py-20 grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20 px-4 ">
+    <div class="w-full max-w-6xl mx-auto pt-40 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20 px-4 ">
         <div class="text-[#ffffff] text-[12px]">
             <h1 class="text-[20px] font-[700] text-[#DFB266]">Contact Us</h1>
             <div class="flex items-center space-x-3 mt-10">
@@ -45,6 +45,13 @@
                 </div>
                 <a href="#" class="hover:underline hover:text-[#DFB266] hover:font-[600] duration-500">a2zengineering.kh@gmail.com</a>
             </div>
+        </div>
+
+        <div class="text-[#ffffff] text-[12px]">
+            <h1 class="text-[20px] font-[700] text-[#DFB266]">Company's Background</h1>
+            <p class="mt-4">A2Z M&E is a company located in Phnom Penh, and it commenced operations in early 2020, founded by a trio of engineers with expertise in Mechanical and electrical design, Supplies and installation of engineering solutions, and technical services for industrial and commercial buildings.</p>
+
+            <iframe class="w-full h-[220px] rounded-md mt-4" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7816.572743266086!2d104.85793700000002!3d11.602921!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDM2JzEwLjUiTiAxMDTCsDUxJzI4LjYiRQ!5e0!3m2!1sen!2skh!4v1739455328447!5m2!1sen!2skh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
