@@ -8,6 +8,11 @@
             padding-bottom: 50px;
         }
 
+        .service_swiper .swiper {
+            margin-inline: initial;
+            padding-bottom: 5rem !important;
+        }
+
         .service_swiper .swiper-slide {
             background-position: center;
             background-size: cover;
@@ -24,6 +29,24 @@
             color: #1c408a;
             font-weight: 700;
             font-size: 20px;
+        }
+        .service_swiper .swiper-pagination .swiper-pagination-bullet {
+            background-color: #1c408a;
+            width: 7px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .service_swiper .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #1c408a;
+            width: 12px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .service_swiper .swiper-button-prev::after,
+        .service_swiper .swiper-button-next::after{
+            content: "";
         }
 
         .service_bg {
@@ -45,6 +68,13 @@
             filter: blur(2px);
         }
 
+        .new_swiper .swiper {
+            margin-inline: initial;
+            padding-bottom: 5rem !important;
+            padding-top: 4rem !important;
+        }
+
+
         .new_swiper .swiper-slide-active {
             filter: blur(0px);
         }
@@ -58,6 +88,42 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
             transform: translateY(20px);
         }
+
+        .new_swiper .swiper-pagination .swiper-pagination-bullet {
+            background-color: #1c408a;
+            width: 4px;
+            height: 4px;
+            border-radius: 10px;
+        }
+
+        .new_swiper .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #1c408a;
+            width: 4px;
+            height: 4px;
+            border-radius: 10px;
+        }
+
+        .new_swiper .swiper-button-prev::after,
+        .new_swiper .swiper-button-next::after{
+            content: "";
+        }
+
+        .new_swiper .swiper-button-prev,
+        .new_swiper .swiper-button-next{
+            top: initial;
+            top: 30px;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .new_swiper .swiper-button-prev{
+            left: 10px;
+        }
+
+        .new_swiper .swiper-button-next{
+            right: 10px;
+        }
+
 
         @media screen and (max-width: 1280px) {
             .new_swiper .swiper-slide {
@@ -119,6 +185,18 @@
                             <p class="text-center mt-1 md:mt-2">Mechanical System</p>
                         </div>
                     </div>
+
+                    <div class="swiper-button-next sm:!hidden">
+                        <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089">
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z"></path>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev sm:!hidden">
+                        <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089">
+                            <path d="M17 6h-6a1 1 0 0 0 -.78 .375l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78 .375h6l.112 -.006a1 1 0 0 0 .669 -1.619l-3.501 -4.375l3.5 -4.375a1 1 0 0 0 -.78 -1.625z"></path>
+                          </svg>
+                    </div>
+                    <div class="swiper-pagination md:hidden"></div>
                 </div>
             </div>
         </div>
@@ -244,10 +322,10 @@
     </div>
 
 
-    <div class="h-[200px] relative bg-[#1C4089]" style="clip-path: polygon(0 90%, 100% 0%, 0% 100%);" data-aos="fade-up"
-        data-aos-duration="1000"></div>
+    {{-- <div class="h-[200px] relative bg-[#1C4089]" style="clip-path: polygon(0 90%, 100% 0%, 0% 100%);" data-aos="fade-up"
+        data-aos-duration="1000"></div> --}}
 
-    <section id="our_experience"
+    {{-- <section id="our_experience"
         class="relative flex flex-col justify-center items-center h-[170vh] bg-[#DFB266] mt-[-200px] my-[-150px] 2xl:my-[-200px] new_swiper overflow-hidden"
         style="clip-path: polygon(0 18%, 100% 0, 100% 90%, 0 80%);" data-aos="fade-up" data-aos-duration="1000">
         <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
@@ -2001,7 +2079,22 @@
                     </div>
                 </div>
             </div>
+
+            <div class="swiper-button-next lg:!hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089" width="24" height="24">
+                    <path d="M12.089 3.634a2 2 0 0 0 -1.089 1.78l-.001 2.586h-4.999a1 1 0 0 0 -1 1v6l.007 .117a1 1 0 0 0 .993 .883l4.999 -.001l.001 2.587a2 2 0 0 0 3.414 1.414l6.586 -6.586a2 2 0 0 0 0 -2.828l-6.586 -6.586a2 2 0 0 0 -2.18 -.434l-.145 .068z"></path>
+                    <path d="M3 8a1 1 0 0 1 .993 .883l.007 .117v6a1 1 0 0 1 -1.993 .117l-.007 -.117v-6a1 1 0 0 1 1 -1z"></path>
+                  </svg>
+            </div>
+            <div class="swiper-button-prev lg:!hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089" width="24" height="24">
+                    <path d="M9.586 4l-6.586 6.586a2 2 0 0 0 0 2.828l6.586 6.586a2 2 0 0 0 2.18 .434l.145 -.068a2 2 0 0 0 1.089 -1.78v-2.586h5a1 1 0 0 0 1 -1v-6l-.007 -.117a1 1 0 0 0 -.993 -.883l-5 -.001v-2.585a2 2 0 0 0 -3.414 -1.414z"></path>
+                    <path d="M4.415 12l6.585 -6.586v3.586l.007 .117a1 1 0 0 0 .993 .883l5 -.001v4l-5 .001a1 1 0 0 0 -1 1v3.586l-6.585 -6.586z"></path>
+                    <path d="M21 8a1 1 0 0 1 .993 .883l.007 .117v6a1 1 0 0 1 -1.993 .117l-.007 -.117v-6a1 1 0 0 1 1 -1z"></path>
+                </svg>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
+    </section> --}}
 @endsection
 

@@ -50,6 +50,7 @@
             height: 6px;
             background-color: #deb266;
         }
+
         video {
             object-fit: cover;
             height: 100%;
@@ -111,6 +112,10 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
 
             on: {
@@ -216,6 +221,11 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
 
             on: {
@@ -397,6 +407,10 @@
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             on: {
                 slideChange: function() {

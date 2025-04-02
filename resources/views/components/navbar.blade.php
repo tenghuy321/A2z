@@ -21,118 +21,100 @@
     <div class="w-full max-w-7xl mx-auto">
         <div class="flex items-center justify-between px-5 py-4">
             <ul class="flex justify-center nav-menu relative nav space-x-6 text-[16px] xl:text-[20px] -mt-2">
-                <li class="relative nav-item {{ Route::is('home') ? 'group' : '' }}">
+                <li class="relative nav-item group">
                     <a href="{{ route('home') }}"
-                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-3 w-full nav_link tracking-[1px] {{ Route::is('home') ? 'active' : '' }}">Home</a>
+                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-4 w-full nav_link tracking-[1px] {{ Route::is('home') ? 'active' : '' }}">Home</a>
                     <div class="absolute -left-[10px] -bottom-[96px] hidden group-hover:block -mt-1 z-20">
                         <div
                             class="py-1 relative text-[14px] grid grid-cols-2 gap-2 w-[24rem] bg-[#ffffff] px-4 space-x-4">
                             <div>
                                 <div>
-                                    <a href="#company_background"
-                                        class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                        onclick="scrollToCenter('#company_background')">Company's
+                                    <a href="{{ route('home') }}#company_background"
+                                        class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]">Company's
                                         background</a>
                                     <hr class="border-b-[1px] border-[#d6d6d6]">
                                 </div>
-                                <a href="#message_from_ceo"
-                                    class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                    onclick="scrollToCenter('#message_from_ceo')">Massage From CEO</a>
+                                <a href="{{ route('home') }}#message_from_ceo"
+                                    class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]">Massage From CEO</a>
                             </div>
                             <div>
                                 <div>
-                                    <a href="#ceo_background"
-                                        class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                        onclick="scrollToCenter('#ceo_background')">CEO’s
+                                    <a href="{{ route('home') }}#ceo_background"
+                                        class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]">CEO’s
                                         Background</a>
                                     <hr class="border-b-[1px] border-[#d6d6d6]">
                                 </div>
-                                <a href="#"
-                                    class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                    onclick="scrollToCenter('#notable_clients')">Notable
-                                    Clients</a>
+                                <a href="{{ route('home') }}#notable_clients"
+                                    class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]">Notable Clients</a>
                             </div>
                         </div>
                     </div>
                 </li>
 
-                <li class="relative nav-item {{ Route::is('about') ? 'group' : '' }}">
+                <li class="relative nav-item group">
                     <a href="{{ route('about') }}"
-                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-3 w-full nav_link tracking-[1px] {{ Route::is('about') ? 'active' : '' }}">About
+                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-4 w-full nav_link tracking-[1px] {{ Route::is('about') ? 'active' : '' }}">About
                         Us</a>
                     <div class="absolute -left-[10px] -bottom-[96px] hidden group-hover:block -mt-1 z-20">
                         <div
                             class="py-1 relative text-[14px] grid grid-cols-2 gap-2 w-[24rem] bg-[#ffffff] px-4 space-x-4">
                             <div>
                                 <div>
-                                    <a href="#mission"
+                                    <a href="{{ route('about') }}#mission"
                                         class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                        onclick="scrollToCenter('#mission')">Mission</a>
+                                        >Mission</a>
                                     <hr class="border-b-[1px] border-[#d6d6d6]">
                                 </div>
-                                <a href="#vision"
+                                <a href="{{ route('about') }}#vision"
                                     class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                    onclick="scrollToCenter('#vision')">Vision</a>
+                                    >Vision</a>
                             </div>
                             <div>
                                 <div>
-                                    <a href="#value"
+                                    <a href="{{ route('about') }}#value"
                                         class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                        onclick="scrollToCenter('#value')">Core value</a>
+                                        >Core value</a>
                                     <hr class="border-b-[1px] border-[#d6d6d6]">
                                 </div>
-                                <a href="#business_registration"
+                                <a href="{{ route('about') }}#business_registration"
                                     class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                    onclick="scrollToCenter('#business_registration')">Business Registration</a>
+                                    >Business Registration</a>
                             </div>
                         </div>
                     </div>
                 </li>
 
-                <li class="relative nav-item {{ Route::is('service') ? 'group' : '' }}">
+                <li class="relative nav-item group">
                     <a href="{{ route('service') }}"
-                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-3 w-full nav_link tracking-[1px] {{ Route::is('service') ? 'active' : '' }}">Professional
+                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-4 w-full nav_link tracking-[1px] {{ Route::is('service') ? 'active' : '' }}">Professional
                         Services</a>
                     <div class="absolute -left-[10px] -bottom-[96px] hidden group-hover:block -mt-1 z-20">
                         <div
                             class="py-1 relative text-[14px] grid grid-cols-2 gap-2 w-[24rem] bg-[#ffffff] px-4 space-x-4">
                             <div>
                                 <div>
-                                    <a href="#service_qualifications"
+                                    <a href="{{ route('service') }}#service_qualifications"
                                         class="block px-4 py-2 w-[14rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                        onclick="scrollToCenter('#service_qualifications')">Service
+                                        >Service
                                         Qualifications</a>
                                     <hr class="border-b-[1px] border-[#d6d6d6]">
                                 </div>
-                                <a href="#reason"
+                                <a href="{{ route('service') }}#reason"
                                     class="block px-4 py-2 w-[15rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                    onclick="scrollToCenter('#reason')">Reasons to Choose A2Z M&E</a>
+                                    >Reasons to Choose A2Z M&E</a>
                             </div>
 
-                            <a href="#our_experience"
+                            {{-- <a href="{{ route('service') }}#our_experience"
                                 class="block px-4 py-2 w-[15rem] duration-500 text-[#385796] hover:text-[#deb266]"
-                                onclick="scrollToCenter('#our_experience')">Project References</a>
+                                >Project References</a> --}}
 
                         </div>
                     </div>
                 </li>
 
-                <li class="relative nav-item {{ Route::is('career') ? 'group' : '' }}">
+                <li class="relative nav-item">
                     <a href="{{ route('career') }}"
-                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-3 w-full nav_link tracking-[1px] {{ Route::is('career') ? 'active' : '' }}">Career</a>
-                    <div class="absolute -left-[10px] -bottom-[96px] hidden group-hover:block -mt-1 z-20">
-                        {{-- <div
-                            class="py-1 relative text-[14px] grid grid-cols-2 gap-2 w-[16rem] bg-[#ffffff] px-4 space-x-4">
-                            <div>
-                                <div>
-                                    <a href="#"
-                                        class="block px-4 py-2 w-[15rem] duration-500 text-[#385796] hover:text-[#deb266]" onclick="scrollToCenter('#reason')">Reasons to Choose A2Z M&E</a>
-                                        <hr class="border-b-[1px] border-[#d6d6d6] w-[14rem]">
-                                </div>
-                                <a href="#" class="block px-4 py-2 w-[15rem] duration-500 text-[#385796] hover:text-[#deb266]" onclick="scrollToCenter('#our_experience')">Project References</a>
-                            </div>
-                        </div> --}}
-                    </div>
+                        class="text-[#ffffff] hover:text-[#deb266] group-hover:text-[#deb266] px-4 py-4 w-full nav_link tracking-[1px] {{ Route::is('career') ? 'active' : '' }}">Career</a>
                 </li>
             </ul>
 

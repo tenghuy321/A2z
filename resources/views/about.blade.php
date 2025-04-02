@@ -8,6 +8,11 @@
             padding-bottom: 50px;
         }
 
+        .swiper {
+            margin-inline: initial;
+            padding-bottom: 5rem !important;
+        }
+
         .swiper-slide {
             background-position: center;
             background-size: cover;
@@ -25,6 +30,41 @@
             font-weight: 700;
             font-size: 20px;
         }
+
+        .swiper .swiper-pagination .swiper-pagination-bullet {
+            background-color: #1c408a;
+            width: 7px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .swiper .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #1c408a;
+            width: 12px;
+            height: 5px;
+            border-radius: 10px;
+        }
+
+        .swiper .swiper-button-prev::after,
+        .swiper .swiper-button-next::after{
+            content: "";
+        }
+
+        /* .swiper .swiper-button-prev,
+        .swiper .swiper-button-next{
+            top: initial;
+
+            border-radius: 4px;
+            color: white;
+        }
+
+        .swiper .swiper-button-prev{
+            left: 10px;
+        }
+
+        .swiper .swiper-button-next{
+            right: 10px;
+        } */
 
         .people_clip {
             clip-path: polygon(35% 12%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -72,7 +112,9 @@
 
 
     <div>
-        <h1 class="text-start text-[20px] md:text-[30px] text-[#1C4089] font-[700] py-10 max-w-7xl mx-auto px-4">Vision, Mission Statement, Core Values</h1>
+        <h1
+            class="text-start text-[20px] md:text-[30px] text-[#1C4089] font-[700] py-10 max-w-7xl mx-auto px-4 leading-none">
+            Vision, Mission Statement, <br> Core Values</h1>
 
         <div class="home_swiper h-full relative">
             <div class="home_content m-0 p-0">
@@ -91,6 +133,18 @@
                             <p class="text-center uppercase tracking-[1px] mt-2">Vision</p>
                         </div>
                     </div>
+
+                    <div class="swiper-button-next sm:!hidden">
+                        <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089">
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z"></path>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev sm:!hidden">
+                        <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1C4089">
+                            <path d="M17 6h-6a1 1 0 0 0 -.78 .375l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78 .375h6l.112 -.006a1 1 0 0 0 .669 -1.619l-3.501 -4.375l3.5 -4.375a1 1 0 0 0 -.78 -1.625z"></path>
+                          </svg>
+                    </div>
+                    <div class="swiper-pagination md:hidden"></div>
                 </div>
             </div>
         </div>
@@ -98,31 +152,6 @@
         <div id="dynamic-content1" class="p-4 relative mt-4 lg:mt-0">
         </div>
     </div>
-
-
-    {{-- <div class="home_swiper h-full relative lg:-top-[300px]">
-        <div class="home_content m-0 p-0">
-            <div class="swiper mySwiper1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex flex-col" id="value">
-                        <img src="{{ asset('assets/images/home/value.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Core Values</p>
-                    </div>
-                    <div class="swiper-slide flex flex-col" id="mission">
-                        <img src="{{ asset('assets/images/home/mission.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Mission</p>
-                    </div>
-                    <div class="swiper-slide flex flex-col" id="vision">
-                        <img src="{{ asset('assets/images/home/vision.png') }}" alt="">
-                        <p class="text-center uppercase tracking-[1px] mt-2">Vision</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="dynamic-content1" class="p-4 relative mt-4 lg:mt-0 lg:-top-[200px]">
-    </div> --}}
 
     <div id="chart" class="w-full max-w-7xl mx-auto overflow-hidden px-4 mt-10">
         <h1 class="text-start text-[20px] md:text-[30px] text-[#1C4089] leading-none font-[700]">Organizational<br> Chart
